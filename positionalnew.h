@@ -64,7 +64,7 @@ public:
         if(enable){
            
             diff = mtr->getReadings() - targetPulse;
-            Input = diff;
+            Input = (-1) * diff;
             Serial.print(diff);
             if(abs(Input)<softThreshold){
                 this->setSoftTunings(softKp,softKi,softKd);
