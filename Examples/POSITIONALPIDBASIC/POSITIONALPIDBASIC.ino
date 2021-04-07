@@ -2,8 +2,8 @@
 UniversalEncoder myEnc(2,3,1);//Create Encoder Object from its pin(En1, En2 , DirectionalOffset)
 Motor m1(9,5);//Create Motor Object (Pwm pin, Dir pin1, Dir pin2 (Optional))
 positionalnew p1(&m1);
-double AggKp=0,AggKi=0,Aggkd=0;
-double SoftKp=0,SoftKi=0,Softkd=0;
+double AggKp=1,AggKi=0,Aggkd=0;
+double SoftKp=1,SoftKi=0,Softkd=0;
 
 int min=-255,max=255,targetpulse=0;
 void setup() {
